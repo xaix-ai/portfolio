@@ -31,7 +31,7 @@ export function Projects() {
   const go = (dir: 1 | -1) =>
     flipTo((index + dir + projects.length) % projects.length);
 
-  const project = projects[index];
+  const project = projects[index] ?? projects[0]!;
 
   return (
     <section id="projects" className="scroll-mt-20 py-24">

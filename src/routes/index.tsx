@@ -68,7 +68,10 @@ function Index() {
       </main>
       <PageMessage
         key={section}
-        message={sectionMessages[section] ?? sectionMessages.home}
+        message={
+          sectionMessages[section] ??
+          "Hi! Welcome to my little corner of the internet."
+        }
       />
     </div>
   );
