@@ -178,10 +178,10 @@ function MessagesPage() {
                 </p>
               </div>
             ) : (
-              <ul className="mt-6 grid gap-4 sm:grid-cols-2">
+              <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 {messages.map((m, i) => (
                   <Reveal key={m.id} delay={Math.min(i, 6) * 60}>
-                    <li className="card-soft h-full p-5">
+                    <article className="card-soft h-full p-5">
                       <div className="flex items-center justify-between gap-3">
                         <span className="font-display font-bold">{m.name}</span>
                         <span className="text-xs text-muted-foreground">
@@ -191,10 +191,10 @@ function MessagesPage() {
                       <p className="mt-2 whitespace-pre-wrap text-sm leading-relaxed text-muted-foreground">
                         {m.message}
                       </p>
-                    </li>
+                    </article>
                   </Reveal>
                 ))}
-              </ul>
+              </div>
             )}
           </div>
         </div>

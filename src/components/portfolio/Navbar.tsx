@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { Menu, Sparkles, X } from "lucide-react";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { navLinks } from "@/lib/portfolio-data";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const base = pathname === "/" ? "" : "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -28,7 +31,7 @@ export function Navbar() {
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a
-          href="#home"
+          href={`${base}#home`}
           className="flex items-center gap-2.5 font-display text-lg font-extrabold tracking-tight"
         >
           <span className="grid size-8 place-items-center rounded-xl bg-primary text-primary-foreground shadow-pop">
@@ -43,13 +46,21 @@ export function Navbar() {
           {navLinks.map((link) => (
             <li key={link.id}>
               <a
-                href={`#${link.id}`}
+                href={`${base}#${link.id}`}
                 className="story-link text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               >
                 {link.label}
               </a>
             </li>
           ))}
+          <li>
+            <Link
+              to="/messages"
+              className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-pop transition-transform duration-300 hover:-translate-y-0.5"
+            >
+              Messages
+            </Link>
+          </li>
         </ul>
 
         <button
@@ -88,7 +99,7 @@ export function Navbar() {
                 style={{ animationDelay: `${i * 60}ms` }}
               >
                 <a
-                  href={`#${link.id}`}
+                  href={`${base}#${link.id}`}
                   onClick={() => setOpen(false)}
                   className="font-display text-3xl font-bold text-foreground transition-colors hover:text-primary"
                 >
@@ -96,6 +107,15 @@ export function Navbar() {
                 </a>
               </li>
             ))}
+            <li className="animate-fade-in">
+              <Link
+                to="/messages"
+                onClick={() => setOpen(false)}
+                className="rounded-full bg-primary px-6 py-3 font-display text-2xl font-bold text-primary-foreground shadow-pop"
+              >
+                Messages
+              </Link>
+            </li>
           </ul>
         </div>
       )}
