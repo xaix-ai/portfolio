@@ -27,7 +27,7 @@ export function Contact() {
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
                   <a
                     href={`mailto:${profile.email}`}
-                    className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-candy to-primary px-6 py-3 font-semibold text-primary-foreground shadow-pop transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow"
+                    className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-pop transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow"
                   >
                     <Mail className="size-4" />
                     {profile.email}

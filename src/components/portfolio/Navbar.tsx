@@ -31,7 +31,7 @@ export function Navbar() {
           href="#home"
           className="flex items-center gap-2.5 font-display text-lg font-extrabold tracking-tight"
         >
-          <span className="grid size-8 place-items-center rounded-xl bg-gradient-to-br from-candy to-primary text-primary-foreground shadow-pop">
+          <span className="grid size-8 place-items-center rounded-xl bg-primary text-primary-foreground shadow-pop">
             <Sparkles className="size-4" />
           </span>
           <span>
@@ -65,7 +65,7 @@ export function Navbar() {
         <div className="fixed inset-0 z-50 flex flex-col bg-background/90 backdrop-blur-xl lg:hidden">
           <div className="flex h-16 items-center justify-between px-4 sm:px-6">
             <span className="flex items-center gap-2.5 font-display text-lg font-extrabold tracking-tight">
-              <span className="grid size-8 place-items-center rounded-xl bg-gradient-to-br from-candy to-primary text-primary-foreground shadow-pop">
+              <span className="grid size-8 place-items-center rounded-xl bg-primary text-primary-foreground shadow-pop">
                 <Sparkles className="size-4" />
               </span>
               <span>

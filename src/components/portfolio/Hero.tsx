@@ -34,7 +34,7 @@ export function Hero() {
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
               <a
                 href="#projects"
-                className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-candy to-primary px-6 py-3 font-semibold text-primary-foreground shadow-pop transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow"
+                className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-pop transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow"
               >
                 See my projects
                 <ArrowDown className="size-4 transition-transform duration-300 group-hover:translate-y-0.5" />
@@ -64,7 +64,7 @@ export function Hero() {
             <div
               className="hero-blob float-a relative size-64 sm:size-80 lg:size-96"
               style={{
-                background: "var(--gradient-dream)",
+                background: "var(--blush)",
                 boxShadow: "var(--shadow-glow)",
               }}
             >

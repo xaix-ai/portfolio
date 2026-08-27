@@ -13,7 +13,7 @@ export function Experience() {
         />
 
         <div className="relative mx-auto max-w-3xl">
-          <div className="absolute bottom-0 left-4 top-0 w-px bg-gradient-to-b from-candy via-primary/50 to-transparent sm:left-6" />
+          <div className="absolute bottom-0 left-4 top-0 w-px bg-border sm:left-6" />
           <div className="space-y-8">
             {experiences.map((item, i) => (
               <Reveal key={item.title} delay={i * 100}>

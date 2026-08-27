@@ -22,7 +22,7 @@ export function PageMessage({ message }: { message: string }) {
     >
       <div className="relative rounded-3xl border border-border bg-card/95 p-4 pr-9 shadow-pop backdrop-blur">
         <div className="mb-2 flex items-center gap-2">
-          <span className="grid size-7 place-items-center rounded-full bg-gradient-to-br from-candy to-primary text-primary-foreground">
+          <span className="grid size-7 place-items-center rounded-full bg-primary text-primary-foreground">
             <Sparkles className="size-3.5" />
           </span>
           <span className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">
