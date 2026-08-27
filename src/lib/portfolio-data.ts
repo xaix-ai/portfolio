@@ -37,6 +37,8 @@ export const navLinks = [
   { id: "projects", label: "Projects" },
   { id: "experience", label: "Experience" },
   { id: "education", label: "Education" },
+  { id: "certificates", label: "Certificates" },
+  { id: "achievements", label: "Achievements" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -51,6 +53,10 @@ export const sectionMessages: Record<string, string> = {
     "Here are some of the things I've built. Click around and try them out!",
   experience: "Some of the experiences that helped me learn and grow.",
   education: "A quick look at my academic journey so far.",
+  certificates:
+    "Courses, trainings and workshops I've completed while learning the craft.",
+  achievements:
+    "Little wins I'm proud of — proof that the late nights were worth it.",
   contact: "Want to talk or work together? Here's where you can find me.",
 };
 
@@ -226,5 +232,71 @@ export const education: EducationItem[] = [
     description:
       "Where the curiosity for computers turned into a decision to actually pursue IT.",
     highlights: ["Graduated with honors", "First lines of code written here"],
+  },
+];
+
+/* ---------- Certificates ---------- */
+
+export interface Certificate {
+  title: string;
+  issuer: string;
+  date: string;
+  credential?: string;
+}
+
+export const certificates: Certificate[] = [
+  {
+    title: "Responsive Web Design",
+    issuer: "freeCodeCamp",
+    date: "2024",
+    credential: "#",
+  },
+  {
+    title: "JavaScript Algorithms & Data Structures",
+    issuer: "freeCodeCamp",
+    date: "2024",
+    credential: "#",
+  },
+  {
+    title: "Python for Everybody",
+    issuer: "Coursera",
+    date: "2025",
+    credential: "#",
+  },
+  {
+    title: "UI/UX Design Fundamentals",
+    issuer: "Figma Community Workshop",
+    date: "2025",
+  },
+];
+
+/* ---------- Achievements ---------- */
+
+export interface Achievement {
+  title: string;
+  detail: string;
+  year: string;
+}
+
+export const achievements: Achievement[] = [
+  {
+    title: "Dean's Lister",
+    detail: "Kept a spot on the list while juggling side projects.",
+    year: "2024 — 2025",
+  },
+  {
+    title: "Top 5 — School Hackathon",
+    detail: "Built a working prototype with a team in 24 caffeinated hours.",
+    year: "2024",
+  },
+  {
+    title: "Best Class Project — Web Development",
+    detail: "Recognized for the design and polish of a course project.",
+    year: "2025",
+  },
+  {
+    title: "Graduated with Honors",
+    detail: "Senior High School, ICT strand.",
+    year: "2023",
   },
 ];
