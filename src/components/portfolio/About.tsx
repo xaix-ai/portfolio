@@ -21,7 +21,7 @@ export function About() {
               <div className="absolute -right-16 -top-16 size-48 rounded-full bg-secondary blur-2xl" />
               <div className="relative flex flex-col items-center gap-8 sm:flex-row sm:items-start">
                 <div className="relative shrink-0">
-                  <div className="size-36 rotate-[-4deg] overflow-hidden rounded-[2.5rem] border-4 border-secondary bg-gradient-to-br from-secondary to-accent shadow-pop transition-transform duration-300 hover:rotate-0">
+                  <div className="size-36 rotate-[-4deg] overflow-hidden rounded-[2.5rem] border-4 border-secondary bg-accent shadow-pop transition-transform duration-300 hover:rotate-0">
                     <img
                       src={avatar}
                       alt={`Illustrated avatar of ${profile.name}`}
