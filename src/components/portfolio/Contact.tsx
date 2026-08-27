@@ -64,7 +64,7 @@ export function Contact() {
             <Sparkle className="twinkle size-4 text-primary" />
           </p>
           <p className="text-sm text-muted-foreground">
-            © 2026 {profile.name} · made with pink & curiosity
+            © 2026 {profile.name} · made with coffee & curiosity
           </p>
         </div>
       </footer>
