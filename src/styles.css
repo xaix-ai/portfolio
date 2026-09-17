@@ -124,35 +124,6 @@
 
 /* ---------- keyframes ---------- */
 
-@keyframes blob-morph {
-  0%,
-  100% {
-    border-radius: 58% 42% 55% 45% / 50% 58% 42% 50%;
-  }
-  33% {
-    border-radius: 45% 55% 48% 52% / 58% 44% 56% 42%;
-  }
-  66% {
-    border-radius: 52% 48% 40% 60% / 45% 52% 48% 55%;
-  }
-}
-
-@keyframes blob-morph-fast {
-  0%,
-  100% {
-    border-radius: 40% 60% 62% 38% / 60% 38% 62% 40%;
-  }
-  25% {
-    border-radius: 62% 38% 40% 60% / 42% 62% 38% 58%;
-  }
-  50% {
-    border-radius: 38% 62% 55% 45% / 55% 45% 60% 40%;
-  }
-  75% {
-    border-radius: 55% 45% 38% 62% / 40% 58% 42% 60%;
-  }
-}
-
 @keyframes float-y {
   0%,
   100% {
@@ -160,12 +131,6 @@
   }
   50% {
     transform: translateY(-14px);
-  }
-}
-
-@keyframes spin-slow {
-  to {
-    transform: rotate(360deg);
   }
 }
 
@@ -233,28 +198,12 @@
   color: var(--rosewood);
 }
 
-.hero-blob {
-  border-radius: 58% 42% 55% 45% / 50% 58% 42% 50%;
-  animation: blob-morph 14s ease-in-out infinite;
-  transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.3, 1.2);
-  will-change: transform, border-radius;
-}
-
-.hero-blob-wrap:hover .hero-blob {
-  animation: blob-morph-fast 2.4s ease-in-out infinite;
-  transform: scale(1.1) rotate(8deg);
-}
-
 .float-a {
   animation: float-y 7s ease-in-out infinite;
 }
 
 .float-b {
   animation: float-y 9s ease-in-out 1.2s infinite;
-}
-
-.spin-slow {
-  animation: spin-slow 18s linear infinite;
 }
 
 .twinkle {
