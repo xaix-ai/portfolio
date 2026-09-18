@@ -1,0 +1,1 @@
+ALTER TABLE public.guest_messages DROP COLUMN email;
