@@ -21,19 +21,19 @@ export function Contact() {
                   <span className="text-gradient">fun</span> together
                 </h2>
                 <p className="mx-auto mt-4 max-w-md leading-relaxed text-muted-foreground">
-                  Whether it's a project idea, a question, or just to say hello
+                  Whether it's a project idea, a question, or just to say hellaur
                   — my inbox is always open and I do reply.
                 </p>
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
                   <a
-                    href={`mailto:${profile.email}`}
+                    href={`mailto:${"xynexkimdll@gmail.com"}`}
                     className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-pop transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow"
                   >
                     <Mail className="size-4" />
                     {profile.email}
                   </a>
                   <a
-                    href={profile.github}
+                    href={"https://github.com/xaix-ai"}
                     target="_blank"
                     rel="noreferrer"
                     aria-label="GitHub profile"
@@ -42,7 +42,7 @@ export function Contact() {
                     <Github className="size-5" />
                   </a>
                   <a
-                    href={profile.linkedin}
+                    href={"https://www.linkedin.com/in/xynexkim"}
                     target="_blank"
                     rel="noreferrer"
                     aria-label="LinkedIn profile"

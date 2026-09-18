@@ -36,7 +36,7 @@ export function Skills() {
                 <div className="mt-5 flex flex-wrap gap-2.5">
                   {group.skills.map((skill) => (
                     <span key={skill.name} className="group relative">
-                      <span className="flex cursor-default items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-sm font-medium shadow-sm transition-all duration-200 hover:-translate-y-1 hover:rotate-[-2deg] hover:border-primary/40 hover:shadow-pop">
+                      <span className="flex cursor-default items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-sm font-medium shadow-sm transition-all duration-200 hover:-translate-y-1 hover:-rotate-2 hover:border-primary/40 hover:shadow-pop">
                         <span
                           className={`size-2 rounded-full ${levelDot[skill.level]}`}
                         />
