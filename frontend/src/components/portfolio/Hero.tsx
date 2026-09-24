@@ -26,8 +26,7 @@ export function Hero() {
           </Reveal>
           <Reveal delay={200}>
             <p className="mx-auto mt-6 max-w-md text-lg leading-relaxed text-muted-foreground">
-              An {profile.role} who loves building soft, playful things on the
-              web — still learning, always experimenting.
+              An {profile.role}, who loves building everything I have in mind.   
             </p>
           </Reveal>
           <Reveal delay={300}>

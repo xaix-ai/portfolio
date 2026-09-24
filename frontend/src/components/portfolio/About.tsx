@@ -1,5 +1,5 @@
 import { Sparkles } from "lucide-react";
-import avatar from "@/assets/avatar.png";
+import avatar from "@/assets/pfp.png";
 import { aboutFacts, aboutInterests, aboutStory, profile } from "@/lib/portfolio-data";
 import { Reveal } from "./Reveal";
 import { SectionHead } from "./SectionHead";

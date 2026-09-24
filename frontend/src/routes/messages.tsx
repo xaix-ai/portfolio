@@ -10,17 +10,17 @@ import { Reveal } from "@/components/portfolio/Reveal";
 export const Route = createFileRoute("/messages")({
   head: () => ({
     meta: [
-      { title: "Messages — Leave a note for Xynex Kim" },
+      { title: "Messages — Leave a note for xaixai" },
       {
         name: "description",
         content:
-          "A little guestbook: leave a message for Xynex Kim and read the notes other visitors have left behind.",
+          "A little guestbook: leave a message for xaixai and read the notes other visitors have left behind.",
       },
-      { property: "og:title", content: "Messages — Leave a note for Xynex Kim" },
+      { property: "og:title", content: "Messages — Leave a note for xaixai" },
       {
         property: "og:description",
         content:
-          "Say hi, leave feedback, or drop a kind note on Xynex Kim's visitor message wall.",
+          "Say hi, leave feedback, or drop a kind note on xaixai's visitor message wall.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -74,7 +74,7 @@ function MessagesPage() {
     }
     setName("");
     setMessage("");
-    setStatus("Thank you! Your message is on the wall ✦");
+    setStatus("Thank you! Your message is on the wall");
     void load();
   };
 

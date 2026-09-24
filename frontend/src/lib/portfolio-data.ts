@@ -23,11 +23,11 @@ import weatherImg from "@/assets/project-weather.jpg";
  */
 
 export const profile = {
-  name: "Xynex Kim",
-  role: "IT student · aspiring developer",
-  email: "hello@xynexkim.dev",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
+  name: "xaixai",
+  role: "IT student · aspiring whatever I could be",
+  email: "xynexkimdll@gmail.com",
+  github: "https://github.com/xaix-ai",
+  linkedin: "https://www.linkedin.com/in/xynexkim",
 };
 
 export const navLinks = [
@@ -46,7 +46,7 @@ export const navLinks = [
 export const sectionMessages: Record<string, string> = {
   home: "Hi! Welcome to my little corner of the internet. Here's where you can explore my work, skills, and things I've been building.",
   about:
-    "A little bit about me, what I enjoy, and how I ended up loving technology.",
+    "A little bit about me, what I enjoy.",
   skills:
     "Still growing! These are the tools and technologies I've explored and worked with so far.",
   projects:
@@ -56,30 +56,29 @@ export const sectionMessages: Record<string, string> = {
   certificates:
     "Courses, trainings and workshops I've completed while learning the craft.",
   achievements:
-    "Little wins I'm proud of — proof that the late nights were worth it.",
-  contact: "Want to talk or work together? Here's where you can find me.",
+    "Little wins I'm proud of, proof that the late nights were worth it.",
+  contact: "Want to talk or work together? Here's where you can find me. Just hit me up ^^.",
 };
 
 /* ---------- About ---------- */
 
 export const aboutStory = [
-  "I'm Xynex — an IT student who accidentally fell in love with building things for the web. What started as tweaking a MySpace-style page for fun turned into late nights of “wait, what if I tried this…” and a growing pile of side projects.",
-  "I'm still very much learning, and honestly that's the fun part. This portfolio is my little lab notebook — a place where I experiment with interfaces, break things, fix them, and slowly become the developer I want to be.",
+  "I'm an IT student who loves exploring new things and turning ideas that pop into my head into something useful. If I think of something that could make a task easier or make someone's life a little less complicated, I like figuring out how to build it.",
+  "I'm still learning, and there's honestly a lot I want to discover. I'm always eager to broaden my knowledge about technology, experiment with new things, and see where they can take me. This portfolio is where I keep some of the things I've built, learned, and tried along the way.",
 ];
 
 export const aboutInterests: { icon: LucideIcon; label: string }[] = [
   { icon: Code2, label: "UI experiments" },
   { icon: Music4, label: "playlists while coding" },
   { icon: Gamepad2, label: "cozy games" },
-  { icon: Coffee, label: "milk tea runs" },
+  { icon: Coffee, label: "coffee runs" },
   { icon: BookOpen, label: "tech docs at 2am" },
 ];
 
 export const aboutFacts = [
-  "I name my side projects like pets.",
-  "Pink theme believer, soft-UI enjoyer.",
-  "Currently learning: Django & backend magic.",
-  "My debugger of choice: console.log ✦",
+  "I name my side projects to everything I find interesting.",
+  "Always curious, always learning something new.",
+  "Currently exploring: frontend, backend & databases",
 ];
 
 /* ---------- Skills ---------- */
@@ -96,7 +95,7 @@ export interface SkillGroup {
 export const skillGroups: SkillGroup[] = [
   {
     title: "Frontend",
-    blurb: "Where I spend most of my time — making things look and feel nice.",
+    blurb: "Where I spend most of my time making everything look appealing and aesthetically pleasing.",
     icon: Code2,
     skills: [
       { name: "HTML", level: "comfortable" },
@@ -108,16 +107,16 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "Backend",
-    blurb: "Newer territory — slowly making friends with servers and databases.",
+    blurb: "Where I explore the most.",
     icon: Server,
     skills: [
       { name: "Python", level: "practicing" },
-      { name: "Django", level: "learning" },
+      { name: "Django", level: "practicing" },
     ],
   },
   {
     title: "Tools & Design",
-    blurb: "The everyday companions that keep the chaos organized.",
+    blurb: "The everyday companions that keep the chaos well organized.",
     icon: Wrench,
     skills: [
       { name: "Git", level: "practicing" },
@@ -181,29 +180,29 @@ export interface ExperienceItem {
 
 export const experiences: ExperienceItem[] = [
   {
-    period: "2025 — Present",
-    title: "Web Development Intern (OJT)",
-    org: "Company Name",
-    description:
-      "Helping build and maintain internal web tools while learning how real teams plan, ship, and fix software together.",
-    tags: ["React", "Teamwork"],
+  period: "2023 — Present",
+  title: "Student Developer",
+  org: "BS Information Technology",
+  description:
+    "Developing projects for school and personal practice while exploring web development, databases, and different ways to turn ideas into working applications.",
+  tags: ["Web Development", "Programming", "Data Analytics"],
   },
   {
-    period: "2024",
-    title: "Hackathon Participant",
-    org: "School Tech Fest",
-    description:
-      "Built a working prototype in 24 hours with a small team — chaotic, caffeinated, and very educational.",
-    tags: ["Prototyping", "Teamwork"],
+  period: "2023 — Present",
+  title: "Personal Project Developer",
+  org: "School Projects",
+  description:
+    "Creating small web projects to practice development, experiment with different ideas, and gradually build stronger skills in frontend and backend development.",
+  tags: ["React", "Django", "UI Design"],
   },
-  {
-    period: "2023 — Present",
-    title: "Tech Committee Member",
-    org: "Student Organization",
-    description:
-      "Looking after the org's website and digital materials for events — posters, sign-up forms, and the occasional last-minute fix.",
-    tags: ["Web", "Design"],
-  },
+  // {
+  //   period: "2023 — Present",
+  //   title: "Tech Committee Member",
+  //   org: "Student Organization",
+  //   description:
+  //     "Looking after the org's website and digital materials for events — posters, sign-up forms, and the occasional last-minute fix.",
+  //   tags: ["Web", "Design"],
+  // },
 ];
 
 /* ---------- Education ---------- */
@@ -220,18 +219,18 @@ export const education: EducationItem[] = [
   {
     period: "2023 — 2027 (expected)",
     degree: "BS Information Technology",
-    school: "Your University Name",
+    school: "Dalubhasaan ng Lungsod ng Lucena",
     description:
-      "Working through programming, databases, networks, and web development coursework — and building side projects to put it all into practice.",
-    highlights: ["Coursework: Web Dev, Databases, OOP", "Add achievements here"],
+      "Working through programming, databases, networks, and web development coursework, and building side projects to put it all into practice.",
+    highlights: ["Coursework: Web Dev, Databases, OOP"],
   },
   {
     period: "2021 — 2023",
-    degree: "Senior High School — ICT Strand",
-    school: "Your High School",
+    degree: "Senior High School | ICT Strand",
+    school: "Quezon National High School",
     description:
       "Where the curiosity for computers turned into a decision to actually pursue IT.",
-    highlights: ["Graduated with honors", "First lines of code written here"],
+    highlights: ["11th grade, with honors"],
   },
 ];
 
@@ -246,28 +245,28 @@ export interface Certificate {
 
 export const certificates: Certificate[] = [
   {
-    title: "Responsive Web Design",
+    title: "Data Analysis with Python",
     issuer: "freeCodeCamp",
-    date: "2024",
+    date: "2026",
     credential: "#",
   },
   {
-    title: "JavaScript Algorithms & Data Structures",
-    issuer: "freeCodeCamp",
-    date: "2024",
-    credential: "#",
-  },
-  {
-    title: "Python for Everybody",
-    issuer: "Coursera",
+    title: "Cybersecurity",
+    issuer: "Cisco Networking Academy Program",
     date: "2025",
     credential: "#",
   },
   {
-    title: "UI/UX Design Fundamentals",
-    issuer: "Figma Community Workshop",
+    title: "Cisco Packet Tracer",
+    issuer: "Cisco Networking Academy Program",
     date: "2025",
+    credential: "#",
   },
+  // {
+  //   title: "UI/UX Design Fundamentals",
+  //   issuer: "Figma Community Workshop",
+  //   date: "2025",
+  // },
 ];
 
 /* ---------- Achievements ---------- */
@@ -280,23 +279,18 @@ export interface Achievement {
 
 export const achievements: Achievement[] = [
   {
-    title: "Dean's Lister",
-    detail: "Kept a spot on the list while juggling side projects.",
-    year: "2024 — 2025",
-  },
-  {
-    title: "Top 5 — School Hackathon",
-    detail: "Built a working prototype with a team in 24 caffeinated hours.",
-    year: "2024",
-  },
-  {
-    title: "Best Class Project — Web Development",
-    detail: "Recognized for the design and polish of a course project.",
-    year: "2025",
-  },
-  {
     title: "Graduated with Honors",
     detail: "Senior High School, ICT strand.",
     year: "2023",
   },
+  {
+    title: "Started Building a Developer Portfolio",
+    detail: "Created a personal portfolio to document projects, skills, and progress as an IT student.",
+    year: "2025 — Present",
+  },
+  // {
+  //   title: "Best Class Project — Web Development",
+  //   detail: "Recognized for the design and polish of a course project.",
+  //   year: "2025",
+  // },
 ];

@@ -71,3 +71,5 @@ export function Contact() {
     </>
   );
 }
+
+// note: nagkaroog ng problem last time need to monitor same goes to skills

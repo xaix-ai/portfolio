@@ -38,7 +38,7 @@ export function Navbar() {
             <Sparkles className="size-4" />
           </span>
           <span>
-            xynex<span className="text-gradient">kim</span>
+            xai<span className="text-gradient">xai</span>
           </span>
         </a>
 
