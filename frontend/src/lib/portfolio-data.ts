@@ -12,6 +12,7 @@ import {
 import pomodoroImg from "@/assets/project-pomodoro.jpg";
 import tasksImg from "@/assets/project-tasks.jpg";
 import weatherImg from "@/assets/project-weather.jpg";
+import ciscoPacketTracerCert from "@/assets/cisco packet tracer.png"
 
 /*
  * ─────────────────────────────────────────────────────────────
@@ -259,8 +260,8 @@ export const certificates: Certificate[] = [
   {
     title: "Cisco Packet Tracer",
     issuer: "Cisco Networking Academy Program",
-    date: "2025",
-    credential: "#",
+    date: "2026",
+    credential: ciscoPacketTracerCert,
   },
   // {
   //   title: "UI/UX Design Fundamentals",
