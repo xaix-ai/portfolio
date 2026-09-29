@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
-import { Menu, Sparkles, X } from "lucide-react";
+import { Menu, Moon, Sparkles, Sun, X } from "lucide-react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { navLinks } from "@/lib/portfolio-data";
+import { useTheme } from "@/hooks/use-theme";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const base = pathname === "/" ? "" : "/";
 
@@ -54,6 +56,20 @@ export function Navbar() {
             </li>
           ))}
           <li>
+            <button
+              type="button"
+              onClick={toggleTheme}
+              aria-label={theme === "light" ? "Switch to dark mode": "Switch to light mode"}
+              className="grid size-10 place-items-center rounded-full border border-border bg-card shadow-soft transition-transform hover:scale-105"
+              >
+                {theme === "light" ? (
+                  <Moon className="size-4" />
+                ) : (
+                  <Sun className="size-4" />
+                )}
+            </button>
+          </li>
+          <li>
             <Link
               to="/messages"
               className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-pop transition-transform duration-300 hover:-translate-y-0.5"
@@ -64,11 +80,24 @@ export function Navbar() {
         </ul>
 
         <button
+          type="button"
+          onClick={toggleTheme}
+          aria-label={theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
+          className="grid size-10 place-items-center rounded-full border border-border bg-card shadow-soft transition-transform hover:scale-105 lg:hidden"
+        >
+          {theme === "light" ? (
+            <Moon className="size-4" />
+          ) : (
+            <Sun className="size-4" />
+          )}
+        </button>
+        <button
+          type="button"
           onClick={() => setOpen(true)}
           aria-label="Open menu"
           className="grid size-10 place-items-center rounded-full border border-border bg-card shadow-soft transition-transform hover:scale-105 lg:hidden"
-        >
-          <Menu className="size-5" />
+          >
+            <Menu className="size-5" />
         </button>
       </nav>
 
